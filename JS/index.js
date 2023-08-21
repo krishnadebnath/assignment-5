@@ -13,11 +13,6 @@ function inputValue(priceOfProduct) {
         document.getElementById('submit').style.backgroundColor = '#E527B2';
     
     }
-    else{
-        document.getElementById('submit').disabled = true;
-        document.getElementById('submit').style.backgroundColor = "#AAAAAA";
-    }
-
 
     if(sum > 0)
     {
@@ -25,11 +20,7 @@ function inputValue(priceOfProduct) {
         document.getElementById('purchaseId').style.backgroundColor = '#E527B2';
        
     }
-    else{
-        document.getElementById('purchaseId').disabled = true;
-        document.getElementById('purchaseId').style.backgroundColor = "#AAAAAA";
-    }
- 
+    
     document.getElementById('totalPrice').innerText = sum.toFixed(2);
 }
 
